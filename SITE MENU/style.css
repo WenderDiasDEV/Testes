@@ -1,16 +1,36 @@
+  /* INICIO ESTILO DO CORPO PRINCIPAL */
 body {
     background-color: #f1f1f1;
   }
-  
+
+  /* INICIO MODO ESCURO */
   .dark-mode {
     background-color: #252525;
     color: #f1f1f1;
   }
+
+  #dark-mode-button {
+    position: fixed;
+    bottom: 45px;
+    right: 50px;
+    margin-right: -50px; /* para centralizar horizontalmente */
+    margin-top: -25px; /* para centralizar verticalmente */
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #479984;
+    color: #ffffff;
+    border: none;
+  }
   
-  /* INICIO ESTILO DAS 3 COLUNAS PRINCIPAIS */
+  #dark-mode-button:hover {
+    background-color: #095240;
+  }
+  
+  /* INICIO DAS 3 COLUNAS PRINCIPAIS */
   .coluna {
     max-width: 700px;
-    padding: 20px;
+    padding-left: 10px;
     width: 33.33%;
     box-sizing: border-box;
     float: left;
@@ -31,13 +51,34 @@ body {
   .clearfix {
     clear: both;
   }
-
-  /* FINAL ESTILO DAS 3 COLUNAS PRINCIPAIS */
+  /* FINAL DAS 3 COLUNAS PRINCIPAIS */
   
   h1 {
     text-align: center;
   }
   
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    text-align: left;
+    margin-bottom: 1px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    color: #479984;
+  }
+
   /* TEXTO ACIMA DA CAIXA DE TEXTO */
 
   label {
@@ -61,52 +102,3 @@ body {
     padding: 10px;
     box-sizing: border-box;
   }
-  
- /* LISTA */
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    margin-bottom: 5px;
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #007bff;
-  }
-  
-  a:hover {
-    color: #479984;
-  }
-  
-  .category-name {
-    font-weight: bold;
-    margin-bottom: 5px;
-    font-size: 24px;
-    font-family: Arial, sans-serif;
-  }
-  
-  #dark-mode-button {
-    position: fixed;
-    bottom: 45px;
-    right: 50px;
-    margin-right: -50px; /* para centralizar horizontalmente */
-    margin-top: -25px; /* para centralizar verticalmente */
-    font-size: 16px;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: #479984;
-    color: #ffffff;
-    border: none;
-  }
-  
-  #dark-mode-button:hover {
-    background-color: #095240;
-  }
-  
