@@ -18,14 +18,15 @@ body {
     font-size: 16px;
     padding: 10px;
     border-radius: 50%;
-    background-color: #479984;
+    background-color: #ffa500;
     color: #ffffff;
     border: none;
   }
   
   #dark-mode-button:hover {
-    background-color: #095240;
+    background-color: #ffd994;
   }
+  /* FINAL */
   
   /* INICIO DAS 3 COLUNAS PRINCIPAIS */
   .coluna {
@@ -55,50 +56,75 @@ body {
   
   h1 {
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
+  /* LISTA ORDENADA */
   ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
   
   li {
     text-align: left;
+    margin-top: 0;
     margin-bottom: 1px;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
   }
-  
+  /* FINAL DA LISTA */
+
+  /* RESPONSAVEL PELOS LINKS */
   a {
     text-decoration: none;
-    color: #007bff;
+    color: #ffa500;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   a:hover {
-    color: #479984;
+    color: #ffd994;
   }
-
-  /* TEXTO ACIMA DA CAIXA DE TEXTO */
-
-  label {
-    display: block;
-    margin-bottom: 5px;
-    position: absolute;
-    bottom: 35px;
-    font-size: 24px;
-    font-family: Arial, sans-serif;
-  }
+  /* FINAL */
   
-  /* A PROPRIA CAIXA DE TEXTO */
+  nav {
+    text-align: center;
+  }
 
+  nav li {
+    display: inline-block;
+  }
+
+  nav a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0;
+    display: block;
+    padding-left: 80px;
+    text-decoration: none;
+  }
+
+  /* A PROPRIA CAIXA DE TEXTO */
   #input-option {
+    color: #d8d8d8;
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    right: 0;
+    margin: auto;
+    width: 80%;
     height: 40px;
     font-size: 20px;
     padding: 10px;
     box-sizing: border-box;
+    border: 3px solid #ffa500;
+    border-radius: 15px;
+  }
+
+  #input-option:hover {
+    border: 3px solid #ffdd9f;
+  }
+
+  #input-option:focus {
+    color: #000;
+    border: 3px solid #ffdd9f;
   }
