@@ -1,0 +1,16 @@
+Riachuelo - https://www.midway.com.br/consulta-boleto
+Riachuelo - https://www.riachuelo.com.br/cliente
+Portal da Fatura - https://www.portaldafatura.com.br/sso/pre-login
+Portal da Fatura - https://www.portaldafatura.com.br/boleto-rapido/login
+Carne INSS - https://sal.rfb.gov.br/PortalSalInternet/faces/pages/calcContribuicoesCI/filiadosApos/selecionarOpcoesCalculoApos.xhtml
+HB - https://netpacs.hbsaude.com.br/Netpacs-paciente/#/
+SUS - https://conectesus-paciente.saude.gov.br/login
+Tim Negocia - https://www.timnegocia.com.br/home
+BV - https://minha.bv.com.br/login/
+
+
+Antecedente SP - https://www.ssp.sp.gov.br/servicos/atestado.aspx
+Antecedente PF - https://antecedentes.dpf.gov.br/antecedentes-criminais/certidao
+Ibama Login - https://servicos.ibama.gov.br/ctf/
+IPVA SP - https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta/consulta.aspx
+Semae boleto - https://cidadao.riopreto.sp.gov.br/empro_cidadao/sjriopreto/semae/empro_dam_semae.php#/
