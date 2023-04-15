@@ -1,38 +1,35 @@
-  /* INICIO ESTILO DO CORPO PRINCIPAL */
+  /* INICIO ESTILO DO CORPO PRINCIPAL DO MENU */
 body {
     background-color: #f1f1f1;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding-left: 100px;
-    padding-right: 100px;
   }
 
-  /* INICIO MODO ESCURO */
+  /* INICIO DARK-MODE */
   .dark-mode {
     background-color: #252525;
     color: #f1f1f1;
   }
 
+  /* ESTILO DO BOTAO DE DARK-MODE */
   #dark-mode-button {
-    position: fixed;
-    bottom: 45px;
-    right: 50px;
     margin-right: -50px; /* para centralizar horizontalmente */
     margin-top: -25px; /* para centralizar verticalmente */
     font-size: 16px;
     padding: 10px;
     border-radius: 50%;
-    background-color: #ffa500;
+    background-color: #FE8B02;
     color: #ffffff;
     border: none;
   }
   
+  /* HOVER NO BOTÃO DARK-MODE, MUDA DE COR QUANDO COLOCAR O MOUSE EM CIMA */
   #dark-mode-button:hover {
     background-color: #ffd994;
   }
   /* FINAL */
   
-  /* INICIO DAS 3 COLUNAS PRINCIPAIS */
+  /* INICIO DAS 3 COLUNAS PRINCIPAIS NOMEADAS DE MENU */
+
+  /* COLUNA ESQUERDA */
   .coluna-menu {
     float: left;
     width: 33.33%;
@@ -40,6 +37,7 @@ body {
     box-sizing: border-box;
   }
   
+  /* COLUNA DO MEIO */
   .coluna-menu2 {
     display: inline-block;
     width: 33.33%;
@@ -47,6 +45,7 @@ body {
     box-sizing: border-box;
   }
   
+  /* COLUNA DIREITA */
   .coluna-menu3 {
     float: right;
     width: 33.33%;
@@ -54,42 +53,43 @@ body {
     box-sizing: border-box;
   }
   
-  .coluna-menu h3, .coluna-menu2 h3, .coluna-menu3 h3 {
-    margin-top: 0;
-  }
-  
+  /* DESIGN DA LISTA DOS MENUS */
   .coluna-menu ul, .coluna-menu2 ul, .coluna-menu3 ul {
     margin: 0;
     padding: 0;
     list-style: none;
   }
   
+  /* DESIGN DA LISTA DOS MENUS */
   .coluna-menu ul li, .coluna-menu2 ul li, .coluna-menu3 ul li {
     margin-bottom: 4px;
     text-align: left;
     font-weight: bold;
   }
   
+  /* DESIGN DA LISTA DOS MENUS E DO LINK DA LISTA*/
   .coluna-menu ul li a, .coluna-menu2 ul li a, .coluna-menu3 ul li a {
     display: block;
     padding: 5px;
-    background-color: #FFA500;
+    background-color: #FE8B02;
     color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
   }
   
+  /* ADICIONA HOVER NOS BOTOES DA LISTA */
   .coluna-menu ul li a:hover, .coluna-menu2 ul li a:hover, .coluna-menu3 ul li a:hover {
     background-color: #ffe2ac;
   }
-  /* FINAL DAS 3 COLUNAS PRINCIPAIS */
+  /* FINAL DAS 3 COLUNAS PRINCIPAIS CHAMADAS DE MENU */
   
+  /* DESIGN DO TEXTO TIPO H1 */
   h1 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
   }
   
-  /* LISTA ORDENADA */
+  /* DESIGN DAS LISTAS */
   ul {
     list-style: none;
     padding: 0;
@@ -103,44 +103,26 @@ body {
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
   }
-  /* FINAL DA LISTA */
+  /* FINAL DO DESIGN DAS LISTAS */
 
-  /* RESPONSAVEL PELOS LINKS */
+  /* DESIGN DOS LINKS */
   a {
     text-decoration: none;
-    color: #ffa500;
+    color: #FE8B02;
     font-family: Arial, Helvetica, sans-serif;
   }
   
+  /* ADICIONA UM HOVER NOS LINKS */
   a:hover {
     color: #ffd994;
   }
   /* FINAL */
-  
-  nav {
-    text-align: center;
-  }
 
-  nav li {
-    display: inline-block;
-  }
-
-  nav a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 0;
-    display: block;
-    padding-left: 80px;
-    text-decoration: none;
-  }
-
-  /* A PROPRIA CAIXA DE TEXTO */
+  /* DESIGN DA PROPRIA CAIXA DE TEXTO */
   .input {
     text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     padding: 20px;
+    margin-bottom: -45px;
     box-sizing: border-box;
   }
   
@@ -148,14 +130,73 @@ body {
     text-align: center;
     padding: 10px;
     width: 80%;
-    border: 3px solid orange;
+    border: 3px solid #FE8B02;
     border-radius: 20px;
     outline: none;
   }
+  /* FINAL DA CAIXA DE TEXTO */
 
   @media screen and (max-width: 768px) {
     .menu, .menu2, .menu3 {
       width: 100%;
       float: none;
     }
+  }
+
+  nav {
+    text-align: center;
+    background-color: #fe8d024b;
+    border-radius: 10px;
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+
+  nav ul {
+    text-align: center;
+    display: inline-flex;
+    list-style: none;
+  }
+
+  nav ul li {
+    text-align: center;
+    background-color: #fe8d02a4;
+    border-radius: 10px;
+    width: 210px;
+    margin: 3px;
+    padding: 3px;
+    padding-bottom: 10px;
+  }
+
+  nav ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+
+  .sub-menu {
+    display: none;
+  }
+
+  nav ul li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    margin-top: 13px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 3px solid #252525;
+  }
+
+  nav ul li:hover .sub-menu ul {
+    display: block;
+  }
+
+  nav ul li:hover .sub-menu ul li {
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.7s;
+  }
+
+  nav ul li:hover .sub-menu ul li:hover {
+    background-color: #ffd994;
   }

@@ -2,12 +2,6 @@ const menu = document.getElementById('menu')
 
 const inputOption = document.getElementById('input-option')
 
-function setFocus() {
-  inputOption.focus()
-}
-
-document.body.addEventListener('click', setFocus)
-
 // Função para abrir link
 function openLink(link) {
   window.open(link.href, '_blank')
