@@ -1,196 +1,199 @@
-/* INICIO DARK-MODE */
-  .dark-mode {
-    background-color: #252525;
-    color: #f1f1f1;
-  }
+/* DARK-MODE */
+.dark-mode {
+  background-color: #fff;
+  color: #fff;
+}
 
-/* ESTILO DO BOTAO DE DARK-MODE */
-  #dark-mode-button {
-    margin-right: -50px; /* para centralizar horizontalmente */
-    margin-top: -25px; /* para centralizar verticalmente */
-    font-size: 16px;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: #FE8B02;
-    color: #ffffff;
-    border: none;
-  }
+/* BOTAO DE DARK-MODE */
+#dark-mode-button {
+  margin-right: -50px; /* para centralizar horizontalmente */
+  margin-top: -25px; /* para centralizar verticalmente */
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #dc143c;
+  color: #ffffff;
+  border: none;
+}
   
 /* HOVER NO BOTÃO DARK-MODE, MUDA DE COR QUANDO COLOCAR O MOUSE EM CIMA */
-  #dark-mode-button:hover {
-    background-color: #ffd994;
-  }
+#dark-mode-button:hover {
+  background-color: #dc143c;
+}
 
-/* INICIO ESTILO DO CORPO PRINCIPAL DO MENU */
+/* CORPO PRINCIPAL DO SITE */
 body {
-    background-color: #f1f1f1;
-  }
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+/* CORPO PRINCIPAL */
+.container {
+  width: 1300px;
+  height: 900px;
+  padding: 25px 32px;
+  border-radius: 18px;
+  justify-content: center;
+  overflow: hidden;
+  background: #505050;
+  background-image: url('https://www.wallpaperflare.com/static/927/783/655/glitch-art-abstract-black-gray-wallpaper.jpg');
+}
+
+/* MENU DO CABEÇALHO */
+nav {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-left: 350px;
+  margin-right: 350px;
+  margin-top: -28px;
+}
+
+nav ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+nav ul li {
+  text-align: center;
+  background-color: #dc143c;
+  border-radius: 10px;
+  width: 170px;
+  margin: 5px;
+  padding: 5px;
+  margin-left: 13px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.sub-menu {
+  display: none;
+}
+
+nav ul li:hover .sub-menu {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-top: 9px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+nav ul li:hover .sub-menu ul {
+  display: block;
+}
+
+nav ul li:hover .sub-menu ul li {
+  width: 150px;
+  text-align: center;
+  border-radius: 100px;
+  background-color: #dc143c;
+}
+
+nav ul li:hover .sub-menu ul li:hover {
+  background-color: #ff6785;
+  transition: 0.6s ease-out;
+}
 
 /* COLUNA ESQUERDA */
-  .coluna-menu {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-    box-sizing: border-box;
-  }
+.coluna-menu {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  box-sizing: border-box;
+}
   
 /* COLUNA DO MEIO */
-  .coluna-menu2 {
-    display: inline-block;
-    width: 33.33%;
-    padding: 5px;
-    box-sizing: border-box;
-  }
+.coluna-menu2 {
+  display: inline-block;
+  width: 33.33%;
+  padding: 5px;
+  box-sizing: border-box;
+}
   
 /* COLUNA DIREITA */
-  .coluna-menu3 {
-    float: right;
-    width: 33.33%;
-    padding: 5px;
-    box-sizing: border-box;
+.coluna-menu3 {
+  float: right;
+  width: 33.33%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+  
+  /* LISTA DOS MENUS */
+.coluna-menu ul, .coluna-menu2 ul, .coluna-menu3 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   }
   
-  /* DESIGN DA LISTA DOS MENUS */
-  .coluna-menu ul, .coluna-menu2 ul, .coluna-menu3 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+  /* LISTA DOS MENUS */
+.coluna-menu ul li, .coluna-menu2 ul li, .coluna-menu3 ul li {
+  padding: 1px;
+  text-align: left;
+  font-weight: bold;
+}
   
-  /* DESIGN DA LISTA DOS MENUS */
-  .coluna-menu ul li, .coluna-menu2 ul li, .coluna-menu3 ul li {
-    margin-bottom: 4px;
-    text-align: left;
-    font-weight: bold;
-  }
+  /* LISTA DOS MENUS E DO LINK DA LISTA*/
+.coluna-menu ul li a, .coluna-menu2 ul li a, .coluna-menu3 ul li a {
+  display: block;
+  background-color: #dc143c;
+  color: white;
+  padding-left: 5px;
+  border-radius: 10px;
+  margin-right: 35px;
+  height: 30px;
+}
   
-  /* DESIGN DA LISTA DOS MENUS E DO LINK DA LISTA*/
-  .coluna-menu ul li a, .coluna-menu2 ul li a, .coluna-menu3 ul li a {
-    display: block;
-    padding: 5px;
-    background-color: #fe8d02bb;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-  }
+  /* HOVER NOS BOTOES DA LISTA */
+.coluna-menu ul li a:hover, .coluna-menu2 ul li a:hover, .coluna-menu3 ul li a:hover {
+  background-color: #ff6785;
+  transition: 0.6s ease-out;
+}
   
-  /* ADICIONA HOVER NOS BOTOES DA LISTA */
-  .coluna-menu ul li a:hover, .coluna-menu2 ul li a:hover, .coluna-menu3 ul li a:hover {
-    background-color: #ffe2ac;
-  }
+  /* LISTAS */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #fff;
   
-  /* DESIGN DO TEXTO TIPO H1 */
-  h1 {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+}
   
-  /* DESIGN DAS LISTAS */
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+li {
+  margin-top: 0;
+  margin-bottom: 1px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
   
-  li {
-    text-align: left;
-    margin-top: 0;
-    margin-bottom: 1px;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+}
 
-  /* DESIGN DOS LINKS */
-  a {
-    text-decoration: none;
-    color: #FE8B02;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+  /* LINKS */
+a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
   
-  /* ADICIONA UM HOVER NOS LINKS */
-  a:hover {
-    color: #ffd994;
-  }
+  /* HOVER NOS LINKS */
+a:hover {
+  color: #ffa2b5;
+}
 
-  /* DESIGN DA PROPRIA CAIXA DE TEXTO */
-  .input {
-    text-align: center;
-    padding: 20px;
-    margin-bottom: -45px;
-    box-sizing: border-box;
-  }
+  /* A PROPRIA CAIXA DE TEXTO */
+.input {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: -34px;
+  box-sizing: border-box;
+}
   
-  .input input {
-    text-align: center;
-    padding: 10px;
-    width: 80%;
-    border: 3px solid #FE8B02;
-    border-radius: 20px;
-    outline: none;
-  }
-  /* FINAL DA CAIXA DE TEXTO */
-
-  @media screen and (max-width: 768px) {
-    .menu, .menu2, .menu3 {
-      width: 100%;
-      float: none;
-    }
-  }
-
-  nav {
-    text-align: center;
-    background-color: #fe8d024b;
-    border-radius: 10px;
-    margin-left: 350px;
-    margin-right: 350px;
-  }
-
-  nav ul {
-    text-align: center;
-    display: inline-flex;
-    list-style: none;
-  }
-
-  nav ul li {
-    text-align: center;
-    background-color: #fe8d02a4;
-    border-radius: 10px;
-    width: 210px;
-    margin: 3px;
-    padding: 3px;
-    padding-bottom: 10px;
-  }
-
-  nav ul li a {
-    text-align: center;
-    text-decoration: none;
-    color: white;
-  }
-
-  .sub-menu {
-    display: none;
-  }
-
-  nav ul li:hover .sub-menu {
-    display: block;
-    position: absolute;
-    margin-top: 13px;
-    border-radius: 10px;
-    background-color: transparent;
-    border: 3px solid #252525;
-  }
-
-  nav ul li:hover .sub-menu ul {
-    display: block;
-  }
-
-  nav ul li:hover .sub-menu ul li {
-    width: 200px;
-    text-align: center;
-    border-radius: 10px;
-    transition: 0.7s;
-  }
-
-  nav ul li:hover .sub-menu ul li:hover {
-    background-color: #ffd994;
+.input input {
+  padding: 10px;
+  width: 80%;
+  border: 3px solid #dc143c;
+  border-radius: 20px;
+  outline: none;
   }
